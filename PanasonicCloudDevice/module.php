@@ -639,11 +639,10 @@ class PanasonicCloudDevice extends IPSModule
         switch ($ident) {
             case 'Operate':
                 $r = $this->SetOperate((bool) $value);
-                $interval = 3000; //2000
+                $interval = 4000;
                 break;
             case 'OperationMode':
                 $r = $this->SetOperateMode((int) $value);
-                $interval = 2000; //1000
                 break;
             case 'EcoMode':
                 $r = $this->SetEcoMode((int) $value);
