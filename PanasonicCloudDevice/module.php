@@ -635,7 +635,7 @@ class PanasonicCloudDevice extends IPSModule
         $this->SendDebug(__FUNCTION__, 'ident=' . $ident . ', value=' . $value, 0);
 
         $r = false;
-        $interval = 1000;
+        $interval = 3000;
         switch ($ident) {
             case 'Operate':
                 $r = $this->SetOperate((bool) $value);
